@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function escreva(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10);
+    var tentativas = 1;
+
+    while(tentativas <= 3) {
+        var chute = parseInt(prompt("Digite seu chute de 0 a 10!")); // parseInt faz com que o prompt converta o texto em número
+
+        if(chute == numeroPensado) {
+            escreva("Você acertou, o número pensado foi " + numeroPensado);
+            break;            
+        } else {            
+            escreva("Você errou, tente novamente!");        
+        }
+        tentativas++;                
+    }
+
+    escreva("FIM!")
+</script>

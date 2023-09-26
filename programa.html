@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<script>
+// Uma função é um atalho para outras instruções que quero executar no meu programa. Ela sempre vem no topo do código, antes de qualquer variável.
+// Uma função pode chamar outra função dentro dela mesma, conforme visualizado abaixo, onde a função escreva chamou a função pulaLinha.
+
+    function pulaLinha(){
+        document.write("<br>")
+    };
+
+    function escreva(frase){
+        document.write(frase);
+        pulaLinha();
+    };
+
+    var ano = 2016;
+    escreva("A idade do Gabriel é 27" + " anos");
+    escreva("Flávio tem " + (ano - 1977) + " anos");
+    escreva("Joaquim tem " + (ano - 1996) + " anos");
+    
+    ano = 2017;
+    escreva("Bayney tem " + (ano - 1975) + " anos");
+    pulaLinha();
+
+    var idadeGabriel = 27;
+    var idadeFlavio = 39;
+    var idadeJoaquim = 20;
+    var idadeBarney = 42;
+
+    var media = (idadeGabriel + idadeFlavio + idadeJoaquim + idadeBarney)/4;
+    escreva("A média das idades é: " + Math.round(media));
+    pulaLinha();
+
+    var nome = "Gabriel";
+    escreva("A idade de " + nome + " é " + idadeGabriel);
+</script>

@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+
+<h3>Álcool ou Gasolina?</h3>
+
+<script>
+    alert("Esse programa demonstra o consumo de combustível do seu carro!")
+    document.write("Seu carro tem um tanque de 40 litros e pode utilizar álcool ou gasolina.<br>");
+    document.write("<br>Com gasolina e usando todo o tanque, você percorre um caminho de 480 quilômetros. Qual é o consumo de gasolina?<br>");
+    document.write("Com álcool, um tanque de 40 litros fez um caminho de 300 quilômetros. Qual é o consumo de álcool?<br><br>")
+
+    var tanque = 40;
+    var kmGasolina = 480;
+    var kmAlcool = 300;
+    var consumoAlcool = (kmAlcool/tanque);
+    var consumoGasolina = (kmGasolina/tanque);
+
+    document.write("Resposta: O consumo de gasolina foi de " + consumoGasolina + " quilômetros por litro. <br>");
+    document.write("Resposta: O consumo de álcool foi de " + consumoAlcool + " quilômetros por litro. <br>");
+</script>
